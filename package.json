@@ -1,0 +1,35 @@
+{
+  "name": "top_using-postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file-if-exists=.env app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturop200/top_using-postgresql.git"
+  },
+  "keywords": [],
+  "author": "arturop200",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arturop200/top_using-postgresql/issues"
+  },
+  "homepage": "https://github.com/arturop200/top_using-postgresql#readme",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-ejs": "^1.0.3"
+  }
+}
