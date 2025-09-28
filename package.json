@@ -2,23 +2,23 @@
   "name": "top_using-postgresql",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --env-file-if-exists=.env app.js"
+  "keywords": [],
+  "homepage": "https://github.com/arturop200/top_using-postgresql#readme",
+  "bugs": {
+    "url": "https://github.com/arturop200/top_using-postgresql/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arturop200/top_using-postgresql.git"
   },
-  "keywords": [],
-  "author": "arturop200",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arturop200/top_using-postgresql/issues"
-  },
-  "homepage": "https://github.com/arturop200/top_using-postgresql#readme",
+  "author": "arturop200",
   "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
