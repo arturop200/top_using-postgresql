@@ -25,4 +25,15 @@ async function createUsernamePost(req, res) {
   res.redirect('/');
 }
 
-export { getUsernames, createUsernameGet, createUsernamePost };
+async function deleteAllUsernames(req, res) {
+  await db.deleteAllUsernames();
+
+  res.redirect('/');
+}
+
+export {
+  getUsernames,
+  createUsernameGet,
+  createUsernamePost,
+  deleteAllUsernames,
+};

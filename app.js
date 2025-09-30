@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/new', usersController.createUsernameGet);
 app.post('/new', usersController.createUsernamePost);
 
+app.get('/delete', usersController.deleteAllUsernames);
+
 app.get('/', usersController.getUsernames);
 
 app.listen(port, () => {

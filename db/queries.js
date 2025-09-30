@@ -20,4 +20,8 @@ async function searchUsername(search) {
   return rows;
 }
 
-export { getAllUsernames, insertUsername, searchUsername };
+async function deleteAllUsernames() {
+  await pool.query('DELETE FROM usernames');
+}
+
+export { getAllUsernames, insertUsername, searchUsername, deleteAllUsernames };
