@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Back to Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1><%= locals.title %></h1>
+      <form action="/new" method="post" role="search" autocomplete="off">
+        <label for="username">Username:</label>
+        <input type="search" name="username" id="username" required />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

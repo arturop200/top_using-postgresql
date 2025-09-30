@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/new">Add New Username</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1><%= locals.title %></h1>
+      <ul>
+        <% if (locals.usernames) { %>
+        <% usernames.forEach((username) => { %>
+        <li><%= username.username %></li>
+        <% }) %>
+        <% } %>
+      </ul>
+    </main>
+  </body>
+</html>
